@@ -62,39 +62,6 @@ a:hover {
 }
 
 
-
-
-
-
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
-.back-to-top {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: 15px;
-  z-index: 996;
-  background: #0078ff;
-  width: 40px;
-  height: 40px;
-  border-radius: 50px;
-  transition: all 0.4s;
-}
-.back-to-top i {
-  font-size: 28px;
-  color: #fff;
-  line-height: 0;
-}
-.back-to-top:hover {
-  background:  #2e9ac5;
-  color: #fff;
-}
-.back-to-top.active {
-  visibility: visible;
-  opacity: 1;
-}
 /* Header */
   
   .header {
@@ -324,7 +291,6 @@ a:hover {
 #hero .hero-container {
   position: relative;
   z-index: 2;
-  min-width: 300px;
   justify-content: center;
   align-items: center;
 }
@@ -389,13 +355,12 @@ a:hover {
 
 /* About */
 
-/* .about {
+ .about {
   background:#1d7992;
   color: #fff;
 
   
 }
-
 
 .about .title 
 {
@@ -403,13 +368,10 @@ a:hover {
   text-transform: none;
   margin-top: 0px;
   color: #fff;
+  padding: 20px 10px;
  
 }  
-.about .title h3
-{
-padding: 20px 10px;
- 
-}  
+
 .about-img 
 {
   width: 100%;
@@ -417,34 +379,35 @@ height: 80vh;
 background: url("../img/learnstep.jpg") no-repeat center center/cover;
 background-size: cover;
 position: relative;
-
-
 }
 
-.about-img ::before {
-  
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.227);
-}
 
 .about .about-img p
 {
+  color: #e8e8e8;
+ text-align: center;
+  font-size: 27px;
+  padding: 4rem 5rem;
+  z-index: 2;
+    
+  } 
+  @media (max-width: 768px) 
+{
+  .about .about-img p
+{
   color: #fff;
-  align-items: center;
-  font-size: 25px;
-  padding: 5rem 6rem;
+text-align: center;
+  font-size: 16px;
+  padding: 1.5rem 1.5rem;
 
     
-  } */
+  } 
+
+}
 
 /* services */
 .services{
-  background:#f4f4f4;
+  background:#f8e5e5;
   padding:2rem 3rem;
   
 
@@ -518,7 +481,7 @@ position: relative;
 /* services end */
 /* Testimonial */
 .testimonial{
-  background:#dfdfdf;
+  background:#ebebeb;
   padding:2rem 3rem;
   
 
@@ -539,7 +502,16 @@ position: relative;
   margin-top: 50px;
   margin: 50px;
 }
-
+@media (max-width:768px) {
+  .testimonial .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap:15px;
+    margin-top: 50px;
+    margin: 50px;
+    justify-content: center;
+  }
+}
 .testimonial .box-container .box{
   box-shadow: 0 5px 10px rgba(0,0,0,.2);
   border-radius: 3px;
@@ -619,6 +591,211 @@ position: relative;
 }
 
 /* Team end */
+
+
+/* course style*/
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.c-title {
+  color: #08415c;
+  text-align: center;
+  font-size: 70px;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  font-weight: bold;
+  
+}
+
+.c-subtitle {
+  color: #c5b4b4;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.plus-container {
+  background-color: transparent;
+  padding: 5px;
+  border: 2px solid white;
+}
+
+.plus-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #d9d9d9;
+  position: relative;
+  border-radius: 50%;
+  z-index: 30;
+  cursor: pointer;
+}
+
+.plus-icon:before,
+.plus-icon:after {
+  content: "";
+  position: absolute;
+  background-color: black;
+}
+
+.plus-icon:before {
+  width: 70%;
+  height: 4px;
+  top: 50%;
+  left: 15%;
+  transform: translateY(-50%);
+}
+
+.plus-icon:after {
+  width: 4px;
+  height: 70%;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.courses {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 400px);
+  row-gap: 50px;
+  column-gap: 100px;
+  padding: 20px;
+}
+
+.course {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+}
+
+.course::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 100%;
+  width: 100%;
+  opacity: 0.3;
+  z-index: 20;
+}
+
+.course-title {
+  font-size: 60px;
+  margin-bottom: 10px;
+  z-index: 30;
+  font-weight: bold;
+}
+
+.course-description {
+  font-size: 35px;
+  margin-bottom: 20px;
+  color: #c5b4b4;
+  z-index: 30;
+  font-weight: bold;
+  width: 70%;
+  text-align: center;
+}
+
+.course:nth-child(1) {
+  background-image: url("../img/mathematics.jpg");
+}
+
+.course:nth-child(2) {
+  background-image: url("../img/architecture.jpg");
+}
+
+.course:nth-child(3) {
+  background-image: url("../img/coding.jpg");
+}
+
+.course:nth-child(4) {
+  background-image: url("../img/pyscology.jpg");
+}
+
+.course:nth-child(5) {
+  background-image: url("../img/history.jpg");
+}
+
+.course:nth-child(6) {
+  background-image: url("../img/biochemistry.jpg");
+}
+
+
+
+/* Login */
+
+.login-container{
+  display: flex;
+  background-color: whitesmoke;
+}
+img{
+  width: 750px; 
+  height: 790px;
+}
+
+.login{
+   margin-left: 40px;
+   margin-top: 30px;
+}
+
+input{
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+  border-radius: 10px;
+  border-color: transparent;
+}
+
+.signin{
+  padding: 10px 30px;
+  font-size: 18px;
+  width: 340px;
+  font-family: sans-serif;
+  font-weight: bold;
+  margin-top: 30px;
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+  border-style: none;
+  margin-left: 40px;
+}
+
+.signin:hover{
+  background-color: white;
+  color: blue;
+}
+
+.signup{
+  padding: 8px 15px;
+  border-radius: 10px;
+  border-color: transparent;
+  background-color: #860265;
+  color: white;
+  margin-top: 40px;
+  margin-left: 20px;
+  font-size: 16px;
+
+}
+
+.signup:hover{
+  background-color: white;
+  color: #860265;
+}
+
+.line{
+  display: flex;
+}
+
+.icons{
+  display: flex;
+}
+
 
 
 
