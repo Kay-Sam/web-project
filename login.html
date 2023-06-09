@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="font-awesome/font-awesome.min.css">
 </head>
 <body>
     <header class="header">
-        <h1 class="logo"><a href="index.html">Educiety</a></h1>
+        <h1 class="logo"><a href="index.html"><img src="assets/img/graduate.png" alt="">Educiety</a></h1>
         <!-- <a href="" class="logo">CSS Nav</a> -->
         <input class="navbar-btn" type="checkbox" id="navbar-btn">
         <label class="navbar-icon" for="navbar-btn"><span class="navicon"></span></label>
@@ -24,45 +21,52 @@
       </header>
 
     <div class="login-container">
-
         <div class="image">
-            <img src="assets/img/page-banner-2.jpg" alt="">
+            <img src="assets/img/IMG-20230608-WA0022.jpg">
         </div>
 
         <div class="info">
-            <h1 style="text-align:center; margin-left: 240px;
-             margin-top: 80px; color: blue;">Login</h1>   
+            <h1>Login</h1>   
+             
             <div class="login">
-               <h4 style="margin-left: 20px; font-size: 25px;">Email Address</h4> <input type="text" placeholder="Username" required><br />
-                <h4 style="margin-left: 20px; font-size: 25px; margin-top: 20px;">Password</h4><input type="password" placeholder="Password" required><br />
+               <h4>Email Address</h4> <input type="text" placeholder=" yourname@gmail.com" required>
+               <br>
+                <h4>Password</h4><input type="password" placeholder="Password" required><br>
             </div>
-            <a href="index4.html"><button class="signin">SIGN IN</button>
-            <h4 style="font-size: 25px; margin-left: 45px;">No account?<a href="www.google.com"><em style="color: blue;"><button class="signup">Sign Up</button></em></a></h4>
+            <button class="signin">Login</button>
+            <h4 class="no-account">No account?
+              <button class="signup">Sign Up</button></a></h4>
             
             <div class="line">
 
-             <div class="hr1" style="margin-left: 10px; margin-top: 30px;"><hr width="200px"></div>
-             <div class="alternative" style="margin-top: 16px; font-size: 22px;">Or sign up with</div>
-             <div class="hr2" style="margin-left: 5px; margin-top: 30px;"><hr width="200px"></div>
+             <div class="hr1" style="margin-left: 10px; margin-top: 30px;"><hr width="220px" ></div>
+             <div class="alternative" style="margin-top: 16px; font-size: 18px; margin-left:10px;">or sign up with</div>
+             <div class="hr2" style="margin-left: 5px; margin-top: 30px;"><hr width="240px"></div>
             </div>
-            <div class="icons" style="margin-left: 250px; margin-top: 15px;">
-                <div class="google"><i class="fa fa-google" style="font-size: 25px;"></i></div>
-                <div class="apple"><i class="fa fa-apple" style="margin-left: 30px; font-size: 25px;"></i></div>
+            <div class="icons">
+                <div class="google">
+                  <a href="https://www.google.com" target="_blank"> <img src="assets/img/Google.png" alt=""> </a>
+                  <span class="apple">
+                    <a href="https://www.apple.com" target="_blank"> <img src="assets/img/apple (1).png" alt="">
+                 </span>                  
+                </div>
             </div>
             </div>
         </div>
     </div>
+  
+
     <footer id="main-footer" class="py-2">
         <div class="footer-container">
           <div>
            <p class="name">
     <a href="index.html">Educiety</p></a> 
     
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit deserunt assumenda enim non? Ratione ipsum voluptates fuga eos earum vitae.</p>
+            <p>Educiety is a prestigious institution of higher learning, known for its commitment to academic excellence, innovation, and community engagement..</p>
         
           </div>
          <div>
-            <h3 >Site Links</h3>
+            <h3>Site Links</h3>
             <ul class="list">
               <li><a href="index.html">Home</a></li>
               <li><a href="#about">About</a></li>
@@ -73,16 +77,17 @@
           </div>
            <div>
             <h3>Email Newsletter</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>Subscribe to our Newsletter</p>
             <br><form>
+              <div class="form">
               <input type="email" placeholder="Enter Email...">
               <input type="submit" value="Subscribe" class="btn1">
             </form>
           </div>
-          
+          </div>
           <div>
             <h3>Learn a Course</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, nesciunt!</p>
+            <p>Starting learning for free with our free online courses covering different subjects.</p>
     <br>
             <a href="login.html" class="btn1">Login</a>
           </div>

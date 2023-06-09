@@ -10,11 +10,11 @@
   .py-2 { padding: 2rem 0; }
   .bg-light {
     background: #f4f4f4;
-    color: #333;
+    color: #08415c;
   }
   .bg-light-2 {
     background: #c2c2c2;
-    color: #333;
+    color: #08415c;
   }
 
   .title {
@@ -23,7 +23,7 @@
     text-transform: uppercase;
     text-align: center;
     margin-top: 30px;
-    color: #0353b0;
+    color: #08415c;
   }
   @media (max-width: 500px) 
   {
@@ -46,17 +46,12 @@
 body {
   background-color: #fff;
   color: #232121;
-  font-family:roboto;
+  font-family:sans-serif;
 }
 
 
 a {
-  color: #1e1e1e;
-  text-decoration: none;
-  transition: all 0.5s ease-in-out;
-}
-a:hover {
-  color: #0078ff;
+  color: #333;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
@@ -71,15 +66,27 @@ a:hover {
     width: 100%;
     z-index: 997;
   }
-   .header .logo {
+   .header .logo  {
     display: block;
     float: left;
-    font-size: 1.8em;
-    padding: 10px 100px;
+    font-size: 1.7em;
+    padding: 8px 60px;
     text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+   
+  
+  }
+  .header .logo a {
+    color: #08415c;
+    text-decoration: none;
+    
     
   }
   
+  .header .logo img {
+   max-height:30px;
+
+  }
   .header ul {
     margin: 0;
     padding: 0;
@@ -96,10 +103,7 @@ a:hover {
     text-decoration: none;
   }
   
-.navbar .active  {
-   color: #0078ff;
-  }
-  
+
  
   
   /* navbar */
@@ -121,8 +125,8 @@ a:hover {
     user-select: none;
   }
   
-  .header .navbar-icon .navicon {
-    background: #333;
+  .header  .navbar-icon .navicon {
+    background: #08415c;
     display: block;
     height: 2px;
     position: relative;
@@ -132,7 +136,7 @@ a:hover {
   
   .header .navbar-icon .navicon:before,
   .header .navbar-icon .navicon:after {
-    background: #333;
+    background: #08415c;
     content: '';
     display: block;
     height: 100%;
@@ -176,6 +180,47 @@ a:hover {
     top: 0;
   }
   
+   
+/* Desktop section */
+@media (min-width: 810px) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 20px;
+  } 
+   .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover  {
+      color: #08415c;
+    
+  }
+  .header .navbar {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .navbar-icon {
+    display: none;
+  }
+}
+
+.navbar .btn {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 20px;
+  border-radius: 50px;
+ margin-top: 15px;
+ margin-right: 80px;
+  
+  color: #fff;
+  background: #08415c;
+}
+.navbar .btn:hover {
+  background: #02293b;
+  color: #fff;
+}
 
   /* Mobile  */
 
@@ -189,6 +234,10 @@ a:hover {
     text-decoration: none;
     
   }
+  .header .logo img {
+    max-height:25px;
+ 
+   }
   .header li a {
     display: block;
     padding: 15px 15px;
@@ -198,7 +247,6 @@ a:hover {
 
   
   .navbar .btn {
-    font-family: "Raleway", sans-serif;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 12px;
@@ -209,55 +257,14 @@ a:hover {
     margin-bottom: 20px;
     margin-left: 10px;
     color: #fff;
-    background: #333;
+    background: #08415c;
   }
   .navbar .btn:hover {
-    background: #073772;
+    background: #02293b;
     color: #fff;
   }
  
-}  
-/* Desktop section */
-@media (min-width: 810px) {
-    .header li {
-      float: left;
-    }
-    .header li a {
-      padding: 20px 20px;
-    } 
-     .navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
-        color: #0078ff;
-      
-    }
-    .header .navbar {
-      clear: none;
-      float: right;
-      max-height: none;
-    }
-    .header .navbar-icon {
-      display: none;
-    }
-  }
-
-  .navbar .btn {
-    font-family: "Raleway", sans-serif;
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 12px;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 8px 20px;
-    border-radius: 50px;
-   margin-top: 15px;
-   margin-right: 80px;
-    
-    color: #fff;
-    background: #333;
-  }
-  .navbar .btn:hover {
-    background: #073772;
-    color: #fff;
-  }
+} 
  /* Navbar end */
 
 /*--------------------------------------------------------------
@@ -295,7 +302,7 @@ a:hover {
   align-items: center;
 }
 #hero h1 {
-  margin: 0 0 10px 0;
+  margin: 0 10px;
   font-size: 64px;
   font-weight: 700;
   line-height: 56px;
@@ -305,9 +312,9 @@ a:hover {
 #hero p {
   color: #fff;
   margin-top:15px;
-  font-size: 16px;
-  font-family: "Poppins", sans-serif;
+  font-size: 20px;
   text-align: center;
+ 
 }
 
 
@@ -356,7 +363,7 @@ a:hover {
 /* About */
 
  .about {
-  background:#1d7992;
+  background:#08415c;
   color: #fff;
 
   
@@ -378,18 +385,17 @@ a:hover {
 height: 80vh;
 background: url("../img/learnstep.jpg") no-repeat center center/cover;
 background-size: cover;
-position: relative;
+opacity: 0.9;
 }
 
 
 .about .about-img p
 {
-  color: #e5e1e1;
+  color: #ebeaea;
  text-align: center;
-  font-size: 27px;
+  font-size: 25px;
   padding: 4rem 5rem;
-  z-index: 2;
-    
+
   } 
   @media (max-width: 768px) 
 {
@@ -453,7 +459,7 @@ text-align: center;
 }
 
 .services .box-container .box h3{
-  color:#0353b0;
+  color:#08415c;
   font-size: 22px;
   padding:10px 0;
 }
@@ -524,7 +530,7 @@ text-align: center;
 }
 
 .testimonial .box-container .box h3{
-  color:#0353b0;
+  color:#08415c;
   font-size: 22px;
   padding:10px 0;
 }
@@ -559,7 +565,7 @@ text-align: center;
 }
 #team .items h3 
 {
-  color: #0353b0;
+  color: #08415c;
 } 
  
 #team .items p 
@@ -692,7 +698,7 @@ text-align: center;
 }
 
 .course-description {
-  font-size: 35px;
+  font-size: 30px;
   margin-bottom: 20px;
   color: #c5b4b4;
   z-index: 30;
@@ -732,69 +738,102 @@ text-align: center;
 .login-container{
   display: flex;
   background-color: whitesmoke;
-  
+
 }
 .image img{
-  width: 720px; 
-  height: 520px;
+  width: 650px; 
+  height: 580px;
+  
 }
-
+.info h1 
+{
+  text-align:center; 
+  margin-left: 25px;
+  margin-top: 80px; 
+  color: #08415c;
+}
 .login{
-   margin-left: 40px;
+   margin-left: 10px;
    margin-top: 30px;
+
+}
+.login h4 
+{
+  margin-left: 80px; 
+  font-size: 18px;
+  color: #093e60;
+}
+.login input{
+  padding: 13px;
+  margin: 10px;
+  width: 400px;
+  border-radius: 20px;
+border-color: #093e60;
+  margin-left: 80px;
 }
 
-input{
-  padding: 10px;
-  margin: 10px;
-  width: 300px;
-  border-radius: 10px;
-  border-color: transparent;
-}
 
 .signin{
   padding: 10px 30px;
   font-size: 18px;
-  width: 340px;
-  font-family: sans-serif;
+  width: 400px;
+
   font-weight: bold;
   margin-top: 30px;
-  background-color: blue;
+  background-color: #093e60;
   color: white;
-  border-radius: 10px;
+  border-radius: 20px;
   border-style: none;
-  margin-left: 40px;
+  margin-left: 90px;
+  text-align: center;
 }
 
-.signin:hover{
-  background-color: white;
-  color: blue;
+.no-account
+{
+  margin-left: 95px; 
+  font-size: 18px;
+  color: #08415c;
 }
-
 .signup{
-  padding: 8px 15px;
-  border-radius: 10px;
+  padding: 3px 6px;
+  border-radius: 20px;
   border-color: transparent;
-  background-color: #860265;
+  background-color: #97670e;
   color: white;
   margin-top: 40px;
-  margin-left: 20px;
+  margin-left: 0px;
   font-size: 16px;
 
 }
 
-.signup:hover{
-  background-color: white;
-  color: #860265;
-}
+
 
 .line{
   display: flex;
+  color: #08415c;
+}
+.hr1
+{
+  color: #f6a400;
 }
 
 .icons{
   display: flex;
+  margin-left: 250px;
+  margin-top: 15px;
+  
 }
+.icons .google img
+{
+  height: 20px;
+  margin-left: 10px;
+}
+.icons .apple 
+{
+  margin-left: 0px;
+
+}
+
 
 
 
@@ -809,9 +848,9 @@ input{
 #main-footer .name a
 {
   font-size: 24px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: #93c3f9;
+  color: #59b1da;
   margin-bottom: 20px;
+  font-weight: bold;
 }
 #main-footer p 
 {
@@ -820,7 +859,7 @@ line-height: 1.5rem;
 #main-footer  h3,h2
 {
   font-size: 20px;
-  color: #93c3f9;
+  color: #3bb2e9;
 }
 #main-footer .list
 {
@@ -863,12 +902,6 @@ margin-left: 20px;
   width: 90%;
 }
 
-#main-footer .footer-container input[type='email'] {
-  width: 90%;
-  padding: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-
   /* footer */
   @media(max-width: 768px) { 
     #main-footer {
@@ -895,7 +928,7 @@ margin-left: 20px;
   padding:0.3rem 1rem;
   font-size: 1.rem;
   color:#fff;
-  background:#366dbe;
+  background:#08415c;
   border-radius: .5rem;
   border: none;
 }
